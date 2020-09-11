@@ -53,9 +53,9 @@ void save_board(int board[BoardSize][BoardSize],
 
 void print_board(int board[BoardSize][BoardSize]) {
     int i, j;
-    char *KanjiNums[9] = {"一", "二", "三", "四", "五", "六", "七", "八", "九"};
+    char *kanjiNums[9] = {"一", "二", "三", "四", "五", "六", "七", "八", "九"};
     printf(" ");
-    for (i = 0; i < BoardSize; i++) printf(" %s", KanjiNums[i]);
+    for (i = 0; i < BoardSize; i++) printf(" %s", kanjiNums[i]);
     printf(" y\n");
     for (i = 0; i < BoardSize; i++) {
         printf("%d", i + 1);

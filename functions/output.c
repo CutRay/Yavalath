@@ -17,10 +17,10 @@ void output_log(int (*boardLog)[BoardSize][BoardSize], int boardCount) {
     int i;
     for (i = 0; i < boardCount; i++) {
         int j, k;
-        char *KanjiNums[9] = {"一", "二", "三", "四", "五",
+        char *kanjiNums[9] = {"一", "二", "三", "四", "五",
                               "六", "七", "八", "九"};
         fprintf(fp, " ");
-        for (j = 0; j < BoardSize; j++) fprintf(fp, " %s", KanjiNums[j]);
+        for (j = 0; j < BoardSize; j++) fprintf(fp, " %s", kanjiNums[j]);
         fprintf(fp, " y\n");
         for (j = 0; j < BoardSize; j++) {
             fprintf(fp, "%d", j + 1);
